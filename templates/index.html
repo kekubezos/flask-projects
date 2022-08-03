@@ -6,8 +6,18 @@
         <link rel="stylesheet" href="./static/style.css">
     </head>
     <body>
-        <h2>Hello, {{name}}</h2>
+        <div>
+           <h2>Hello, {{name}}</h2>
         <p>This is your introduction to {{ template_name }} templating language.</p>
+        </div>
+
+        <div>
+            <p>I love {{favorites}} such as {{first_game}}, {{second_game}}</p>
+            <p>I am highly skilled in {{first_language}} and {{second_language}}</p>
+            <p>I am interested in {{first_interest}} and {{second_interest}}</p>
+
+        </div>
+
     </body>
 
 </html>
