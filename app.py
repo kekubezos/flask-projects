@@ -11,10 +11,17 @@ kwargs = {
     "first_language": "Python",
     "second_language": "JavaScript",
     "first_interest": "Software Engineering",
-    "second_interest":"Cloud DevOps"
+    "second_interest": "Cloud DevOps"
 }
+
+company = 'Microsoft'
 
 
 @app.route('/')
 def welcome():
     return render_template('index.html', **kwargs)
+
+
+@app.route('/conditionals')
+def condition():
+    return render_template('conditional.html', company=company)
